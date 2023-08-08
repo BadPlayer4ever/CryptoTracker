@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md3 details">
+            <div class="img">
+                <img [src]="coinData?.image?.large">
+                <h1 class="text-center">{{coinData?.name}}</h1>
+                <h2 [innerHTML]="coinData?.description?.en.split('. ')[0]"></h2>
+                <div class="more-detail">
+                    <span class="title">Rango: </span> <span class="value">{{coinData?.market_cap_rank}}</span><br>
+                    <span class="title">Valor actual: </span> <span class="value">{{coinData?.market_data.current_price.usd | currency}}</span><br>
+                    <span class="title">Capitalizacion: </span> <span class="value">{{coinData?.market_data.market_cap.usd | currency}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <canvas style="width: 250px;" baseChart [data]="chartData" [options]="chartOptions" [type]="lineChartType"></canvas>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+  <header>
+    <!--Encabezado-->
+    <mat-toolbar>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Crypto Tracker</span>
+      <span class="example-spacer"></span>
+      <mat-form-field>
+        <mat-select  [(ngModel)] = "defaultCurrency" (valueChange)= "sendCurrency($event)">          
+          <mat-option value="cop" selected>COP</mat-option>
+          <mat-option value="usd">USD</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </mat-toolbar>
+  </header>
+
+<!--Cuerpo generado-->
+<router-outlet></router-outlet>

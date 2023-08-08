@@ -1,0 +1,45 @@
+.header{
+    height: 50%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.header h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(128, 128, 128);
+}
+
+.banner {
+    background-image: url("../../assets/images/cryptoBanner.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 100%;
+    
+}
+
+.sub-header{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    border: 0;
+    background: transparent;
+    text-align: left;
+    color: #c4c1c1;
+}
+
+.card img{
+    margin-left: 18px;
+}
+
+.section {
+    background-color: #6d6d6d94;
+}
